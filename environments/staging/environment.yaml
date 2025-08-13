@@ -37,6 +37,11 @@ app:
     # - name: clientSecret
     #   value: "{aes}AIUxkkmTE73hJrAj3oN5OMYQnC9j3NWNJNTXXAchJ97qyrr7MHYMmn1NEtxgHXFqmYp8VNEAYhB5hJS8voLsRYyfA/7GpDdznGs/DtYEqzlw"
 
+  # Enable a public endpoint for the application. If not set, the application
+  # is only available on an internal endpoint accessible to other applications
+  # within a subscription.
+  endpoints: public
+
   # observability:
   #  cloudwatch:   
   #    arn: arn:aws:logs:region:account-id:destination:destination_name
