@@ -7,7 +7,7 @@ app:
     # q: consider availability zones? 
 
     # min number of instances. can be 0 for scale to 0. default to 1.
-    min: 1
+    min: 2
     # max number of instances. defaults to 1 if min == 0, otherwise defaults to min
     # q: what's the overall limit?
     max: 2
@@ -34,8 +34,8 @@ app:
       value: "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_eksr97OJU/.well-known/openid-configuration"
     - name: clientId
       value: 7rgjkvbjl487r2i1bvialvj2f4
-    - name: clientSecret
-      value: "{aes}AIUxkkmTE73hJrAj3oN5OMYQnC9j3NWNJNTXXAchJ97qyrr7MHYMmn1NEtxgHXFqmYp8VNEAYhB5hJS8voLsRYyfA/7GpDdznGs/DtYEqzlw"
+    # - name: clientSecret
+    #   value: "{aes}AIUxkkmTE73hJrAj3oN5OMYQnC9j3NWNJNTXXAchJ97qyrr7MHYMmn1NEtxgHXFqmYp8VNEAYhB5hJS8voLsRYyfA/7GpDdznGs/DtYEqzlw"
 
   # observability:
   #  cloudwatch:   
@@ -43,7 +43,7 @@ app:
   #    logGroup: myLogGroup
   #    region: us-east-1
 
-  version: "8a1f5fe6-4cc3-4d26-b00e-98d7a37da4c3"
+  version: ""
 # probes
 # dynamic scaling
 # scaling to 0
